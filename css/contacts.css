@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
+
+.wrapper .small-title {
+  border-top: 1px solid white;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  width: 100%;
+}
+
+.wrapper ul {
+  padding: 10px;
+}
+
+.wrapper ul li {
+  margin-right: 10px;
+  margin-bottom: 40px;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid #D8E2DC;
+  float: left;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li .fa {
+  color: #D8E2DC;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover.facebook {
+  border: 5px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-facebook {
+  color: #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+/*twitter*/
+.wrapper ul li:hover.twitter {
+  border: 5px solid #00aced;
+  box-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-twitter {
+  color: #00aced;
+  text-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+/* instagram */
+.wrapper ul li:hover.instagram {
+  border: 5px solid #ffc100;
+  box-shadow: 0 0 15px #ffc100;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-instagram {
+  color: white;
+  text-shadow: 0 0 15px #ffc100;
+  transition: all 0.5s ease;
+}
+
+/* google */
+.wrapper ul li:hover.google {
+  border: 5px solid #dd4b39;
+  box-shadow: 0 0 15px #dd4b39;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-google {
+  color: #dd4b39;
+  text-shadow: 0 0 15px #dd4b39;
+  transition: all 0.5s ease;
+}
+
+/* whatsapp */
+.wrapper ul li:hover.whatsapp {
+  border: 5px solid #c304ef;
+  box-shadow: 0 0 15px #c304ef;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-whatsapp {
+  color: white;
+  text-shadow: 0 0 15px #c304ef;
+  transition: all 0.5s ease;
+}
+
+/* телефон и почта */
+.wrapper a {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 20px;
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  margin-top: 20px;
+  padding: 30px;
+  float: right;
+  vertical-align: 0;
+}
+
+.map {
+  display: block;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  float: right;
+  width: 600px;
+  height: 400px;
+}
+
+.map:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.title-map {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 40px;
+  font-size: 20px;
+  font-family: 'JetBrains Mono', monospace;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  #contacts {
+  }
+
+  .small-title {
+    align-items: center;
+  }
+
+  .map {
+    width: 100%;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .title-map {
+    right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrapper ul li.whatsapp {
+    margin-left: 145px;
+  }
+}
+
+@media (max-width: 400px) {
+  .wrapper ul li.whatsapp {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,110 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+.header {
+  width: 100%;
+}
+
+.header-image {
+  background-image: url("../img/venus.png");
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  height: 300px;
+}
+
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 20%;
+  opacity: .8;
+}
+
+.title {
+  font-family: 'Roboto Mono', monospace;
+  float: left;
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  left: 20px;
+  color: burlywood;
+  line-height: 20px;
+  font-size: 40px;
+}
+
+.nav {
+  float: right;
+  position: absolute;
+  margin: 10px;
+  top: 20px;
+  right: 20px;
+  line-height: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  list-style-type: none;
+  color: burlywood;
+  border: 1px solid chocolate;
+  padding: 10px;
+}
+
+.nav a:hover {
+  color: sienna;
+}
+
+.nav ul li {
+  display: inline-block;
+  top: -10px;
+}
+
+/* cкрамбл эффект */
+.dud {
+  color: #757575;
+}
+
+@media (max-width: 800px) {
+  .header-image {
+    background-image: url("../img/venus.png");
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-content: center;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .title {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+  }
+
+  .nav li {
+    display: flex;
+    float: right;
+    line-height: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav {
+    margin-top: 80px;
+  }
+
+  .nav li {
+    line-height: 50px;
+    flex-flow: column;
+    width: 40%;
+  }
+}
+
+@media (max-width: 320px) {
+  .nav {
+    margin-top: 50px;
+  }
+}

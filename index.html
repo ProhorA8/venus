@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <title>Венера</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/feature.css">
+  <link rel="stylesheet" href="css/sale.css">
+  <link rel="stylesheet" href="css/about_us.css">
+  <link rel="stylesheet" href="css/reviews.css">
+  <link rel="stylesheet" href="css/back_call.css">
+  <link rel="stylesheet" href="css/contacts.css">
+
+  <!--  обратный отсчёт-->
+  <link rel="stylesheet" href="css/jquery.countdown.css">
+
+  <!--  звонок-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <!-- cкрамбл эффект-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+<div class="header">
+  <img class="header-image" src="img/venus.png" alt="Венера">
+
+  <img class="logo" src="img/shuttle1.png" alt="Шатл">
+  <div class="nav">
+    <ul>
+      <li><a href="#small-title">Почему мы?</a></li>
+      <li><a href="#sale">Акция</a></li>
+      <li><a href="#slider">Отзывы</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+  </div>
+  <div class="title">
+    Путешествие на Венеру
+  </div>
+
+  <!-- cкрамбл эффект-->
+  <script src="js/scramble.js"></script>
+</div>
+
+<div class="feature">
+  <div class="column-1">
+    <img class="image-params" src="img/shuttle.jpg" alt="Шатл на готове">
+  </div>
+
+  <div class="column-2">
+    <p>
+      Расстояние от Венеры до Земли меняется в пределах от 38 до 261 млн км (и это только в одну сторону!).
+
+      До 2021 года мы планируем отправить на Венеру туристов, готовых заплатить за путешествие $340 млн.
+      Высадки на Венеру не будет, корабль с путешественниками лишь
+      облетит планету. Но, согласитесь, и это уже что-то на грани фантастики.
+
+      За $50–100 млн уже в эти недели собираемся осуществить пилотируемый полет вокруг
+      Венеры. «Ракета скользнет по поверхности Венеры и немного дальше в глубокий космос, а потом вернется на Землю».
+
+      Ракета-носитель и капсула для туристов готовы и испытаны в реальном полете. У вас ещё есть время записаться на
+      полёт.
+    </p>
+  </div>
+</div>
+
+<div id="sale">
+  <div id="countdown"></div>
+  <p id="note"></p>
+
+  <!-- JavaScript includes -->
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="js/jquery.countdown.js"></script>
+  <script src="js/sale.js"></script>
+</div>
+
+<div class="about_us">
+  <div id="small-title">Почему именно мы?</div>
+  <div class="about">
+    <div class="col-1 params">
+      Мы строго придерживаемся установленных планов и сроков исполнения.
+    </div>
+    <div class="col-2 params">
+      Мы гарантируем качество оказываемых услуг.
+    </div>
+    <div class="col-3 params">
+      К работе допускаются только люди прошедшие соответствующую подготовку.
+    </div>
+  </div>
+  <div class="about">
+    <div class="col-1 params">
+      Мы любим и уважаем своих клиентов. Гарантируя вашу безопасность.
+    </div>
+    <div class="col-2 params">
+      Мы работаем в сфере космического туризма с 2000 года.
+    </div>
+    <div class="col-3 params">
+      Полная оплата производится по вашему прибытию на Землю.
+    </div>
+  </div>
+</div>
+
+<div class="reviews">
+  <div id="slider" class="slider">
+    <ol class="slider__indicators">
+      <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
+      <li class="slider__indicator" data-slide-to="1"></li>
+      <li class="slider__indicator" data-slide-to="2"></li>
+      <li class="slider__indicator" data-slide-to="3"></li>
+    </ol>
+    <div class="small-title">Отзывы клиентов</div>
+    <div class="slider__items">
+      <div class="slider__item slider__item_1 slider__item_active">
+        <div class="slider__item_inner">
+          <span class="slider__item_img">
+            <img class="photo slider__item_photo" src="https://itchief.ru/examples/images/photo-1.jpg" alt="фото">
+          </span>
+          <span class="slider__item_testimonial">
+            <span class="slider__item_name">Игорь Матвеев</span>
+            <span class="slider__item_post">Юрист</span>
+            <span class="slider__item_text">
+              Обращались к услугам данной компании в 2005 году, всё очень понравилось. Всем рекомендую!
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="slider__item slider__item_2">
+        <div class="slider__item_inner">
+          <span class="slider__item_img">
+            <img class="photo" src="https://itchief.ru/examples/images/photo-2.jpg" alt="фото">
+          </span>
+          <span class="slider__item_testimonial">
+            <span class="slider__item_name">Людмила Михайловна</span>
+            <span class="slider__item_post">Веб-дизайнер</span>
+            <span class="slider__item_text">
+              Пользовались услугами не однократно, всё очень понравилось.
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="slider__item slider__item_3">
+        <div class="slider__item_inner">
+          <span class="slider__item_img">
+            <img class="photo" src="https://itchief.ru/examples/images/photo-3.jpg" alt="фото">
+          </span>
+          <span class="slider__item_testimonial">
+            <span class="slider__item_name">Андрей Константинович</span>
+            <span class="slider__item_post">Экономист</span>
+            <span class="slider__item_text">
+              Летали в этом году, полёт был невероятным. Вы этого никогда не забудите. Планируем обращаться вновь.
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="slider__item slider__item_4">
+        <div class="slider__item_inner">
+          <span class="slider__item_img">
+            <img class="photo" src="https://itchief.ru/examples/images/photo-4.jpg" alt="фото">
+          </span>
+          <span class="slider__item_testimonial">
+            <span class="slider__item_name">Мария Сергеевна</span>
+            <span class="slider__item_post">Менеджер</span>
+            <span class="slider__item_text">
+              Полёт совершали в 2008 году, это не забываемые впечатления! Это однозначно стоит своих денег!
+              Рекомендую.
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <a class="slider__control slider__control_prev" href="#" role="button"></a>
+    <a class="slider__control slider__control_next" href="#" role="button"></a>
+    <script rel="stylesheet" src="js/slider.js"></script>
+  </div>
+</div>
+
+<div class="small-title">Заказать обратый звонок</div>
+<div class="back_call">
+  <a href="http://nisnom.com/veb-razrabotki/animirovannaya-knopka-zakazat-zvonok">
+    <i class="Phone is-animating"></i>
+  </a>
+</div>
+
+<div id="contacts">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <div class="wrapper">
+    <div class="small-title">Контакты</div>
+    <ul>
+      <li class="facebook"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
+      <li class="twitter"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
+      <li class="instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+      <li class="google"><i class="fa fa-google fa-2x" aria-hidden="true"></i></li>
+      <li class="whatsapp"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></li>
+      <a href="tel:+375-44-5888834">+375-44-5888834</a>
+      <a href="mailto:procustom4@gmail.com">procustom4@gmail.com</a>
+    </ul>
+  </div>
+
+  <div class="title-map">Местоположение нашего офиса</div>
+  <div class="wrapper map">
+    <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A76906cb20432a51958ec68c7c757700f8aaa7582f4cfa518c492251e37ee126c&amp;lang=ru_RU&amp;scroll=true"></script>
+  </div>
+</div>
+</body>
+</html>
