@@ -2,25 +2,22 @@
 
 .feature {
   display: flex;
+  flex-direction: row;
   width: 100%;
 }
 
 .column-1 {
-  float: left;
-  width: 50%;
-  background-color: #21040F;
   padding: 7px;
+  width: 50%;
+  background-color: black;
 }
 
 .column-2 {
-  font-size: 20px;
-  width: 50%;
-  margin-right: 0;
-  float: right;
-  background-color: #21040F;
-  color: white;
   padding: 20px;
   font-family: 'JetBrains Mono', monospace;
+  font-size: 20px;
+  width: 50%;
+  color: white;
 }
 
 .image-params {
@@ -35,31 +32,11 @@
   }
 
   .column-1{
-    width: 96.5%;
+    width: 98%;
   }
 
   .column-2 {
-    width: 95%;
-    padding: 10px;
-  }
-}
-
-@media (max-width: 320px) {
-  * {
-    margin: 0;
-  }
-  .feature {
-    margin-left: 10px;
-    width: 94%;
-    flex-direction: column;
-  }
-
-  .column-1{
-    width: 96%;
-  }
-
-  .column-2 {
-    width: 94%;
-    padding: 10px;
+    width: 98%;
+    padding: 7px;
   }
 }

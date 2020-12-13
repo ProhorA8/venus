@@ -1,6 +1,6 @@
 $(function(){
 	
-	var note = $('#note'),
+	var note = $('.note'),
 		ts = new Date(2021, 0, 1),
 		newYear = true;
 	

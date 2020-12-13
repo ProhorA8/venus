@@ -2,13 +2,13 @@
 var slider = (function (config) {
 
     const ClassName = {
-        INDICATOR_ACTIVE: 'slider__indicator_active',
-        ITEM: 'slider__item',
-        ITEM_LEFT: 'slider__item_left',
-        ITEM_RIGHT: 'slider__item_right',
-        ITEM_PREV: 'slider__item_prev',
-        ITEM_NEXT: 'slider__item_next',
-        ITEM_ACTIVE: 'slider__item_active'
+        INDICATOR_ACTIVE: 'indicator_active',
+        ITEM: 'item',
+        ITEM_LEFT: 'item_left',
+        ITEM_RIGHT: 'item_right',
+        ITEM_PREV: 'item_prev',
+        ITEM_NEXT: 'item_next',
+        ITEM_ACTIVE: 'item_active'
     }
 
     var
@@ -98,7 +98,7 @@ var slider = (function (config) {
                 lastItemIndex = _items.length - 1, // индекс последнего элемента
                 targetItemIndex = activeItemIndex === 0 ? lastItemIndex : activeItemIndex - 1;
             if (direction === "next") { // определяем индекс следующего слайда в зависимости от направления
-                targetItemIndex = activeItemIndex == lastItemIndex ? 0 : activeItemIndex + 1;
+                targetItemIndex = activeItemIndex === lastItemIndex ? 0 : activeItemIndex + 1;
             }
             _slide(direction, activeItemIndex, targetItemIndex);
         },
@@ -117,7 +117,7 @@ var slider = (function (config) {
                 activeItemIndex = _getItemIndex(activeItem), // индекс текущего элемента
                 targetItemIndex = e.target.getAttribute('data-slide-to');
 
-            if (!(e.target.hasAttribute('data-slide-to') || e.target.classList.contains('slider__control'))) {
+            if (!(e.target.hasAttribute('data-slide-to') || e.target.classList.contains('control'))) {
                 return; // завершаем если клик пришёлся на не соответствующие элементы
             }
             if (e.target.hasAttribute('data-slide-to')) {// осуществляем переход на указанный сдайд
@@ -127,7 +127,7 @@ var slider = (function (config) {
                 _slide((targetItemIndex > activeItemIndex) ? 'next' : 'prev', activeItemIndex, targetItemIndex);
             } else {
                 e.preventDefault();
-                _slideTo(e.target.classList.contains('slider__control_next') ? 'next' : 'prev');
+                _slideTo(e.target.classList.contains('control_next') ? 'next' : 'prev');
             }
         },
         // установка обработчиков событий
