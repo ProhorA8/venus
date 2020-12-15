@@ -22,7 +22,7 @@
   list-style-type: none;
   cursor: pointer;
   border-radius: 50%;
-  border: .5vmin solid #D8E2DC;
+  border: 5px solid #D8E2DC;
   transition: all 0.5s ease;
 }
 
